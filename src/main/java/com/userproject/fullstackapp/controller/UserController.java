@@ -23,13 +23,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    //add user controller
+
     @PostMapping("/users")
     User newUser(@RequestBody User newUser){
         return userRepository.save(newUser);
     }
 
-    //add get all users
     @GetMapping("/users")
     public ResponseEntity<List<User>> findAll(){
         List<User> userList = userRepository.findAll();
