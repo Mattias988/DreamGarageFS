@@ -25,12 +25,12 @@ public class UserController {
 
 
     @PostMapping("/users")
-    User newUser(@RequestBody User newUser){
+    User newUser(@RequestBody User newUser) {
         return userRepository.save(newUser);
     }
 
     @GetMapping("/users")
-    public ResponseEntity<List<User>> findAll(){
+    public ResponseEntity<List<User>> findAll() {
         List<User> userList = userRepository.findAll();
         return new ResponseEntity<>(userList, HttpStatus.OK);
     }
