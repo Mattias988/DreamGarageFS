@@ -1,14 +1,20 @@
-import {Hero} from './sections/render'
 import Nav from './components/Nav';
+import Home from './pages/Home';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-      <main className="">
+    <Router>
+      <div className='app-container'>
         <Nav />
-        <section className="xl:padding-1 wide:padding-r padding-b">
-          <Hero/>
-        </section>
-      </main>
+        <div className='content-container'>
+          <Routes>
+            <Route exact path='/' element={<Home />}/>
+              
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
