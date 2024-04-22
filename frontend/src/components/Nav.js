@@ -7,7 +7,7 @@ import { navLinks } from '../constance'
 function Nav() {
   return (
     <header className='py-8 absolute z-10 w-full font-primary font-bold'>
-        <nav className='flex items-center'>
+        <nav className='flex justify-center'>
             <a href='/' className='pl-32 flex justify-self-auto '>
                 <img
                     src={Logo}
@@ -16,7 +16,7 @@ function Nav() {
                     height={40}
                     className=''
                 />
-                <span className='pl-9 text-white'>
+                <span className='pl-9 text-white w-[250px]'>
                     DREAM GARAGE
                 </span>
             </a>
