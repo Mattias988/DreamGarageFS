@@ -5,7 +5,6 @@ import com.userproject.fullstackapp.DTO.UserDTO;
 import com.userproject.fullstackapp.Service.UserService;
 import com.userproject.fullstackapp.model.User;
 import com.userproject.fullstackapp.repository.UserRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
