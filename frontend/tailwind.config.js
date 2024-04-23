@@ -5,6 +5,12 @@ module.exports = {
     extend: {
       backgroundImage: {
       'garage':"url('./assets/bg-garage.jpg')"
+      },
+      fontFamily:{
+        primary: ['Montserrat']
+      },
+      backdropBlur:{
+        xs: '2px'
       }
     },
   },
