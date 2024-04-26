@@ -1,12 +1,12 @@
 package com.userproject.fullstackapp.Service;
 
+import com.userproject.fullstackapp.DTO.BlogDTO;
 import com.userproject.fullstackapp.model.Posts;
 import com.userproject.fullstackapp.repository.PostRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import com.userproject.fullstackapp.DTO.*;
 
 @Service
 public class PostService {
@@ -14,10 +14,13 @@ public class PostService {
     @Autowired
     private PostRepository postRepository;
 
-    public Posts updatePost(Long postId, PostDTO postDTO){
+    public Posts updatePost(Long postId, BlogDTO postDTO){
         Posts post = postRepository.findById(postId)
                 .orElseThrow(()-> new EntityNotFoundException("Ten post nie istnieje!"));
-        post.getTitle(postDTO.);
+        post.setTitle(postDTO.getNewTitle());
+        post.setDescription(postDTO.getNewDescription());
+        postRepository.save(post);
+        return null;
     }
 
         public ResponseEntity<Posts> deletePost(Long postId){

@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PostDTO {
+public class BlogDTO {
 
     private String newTitle;
 
