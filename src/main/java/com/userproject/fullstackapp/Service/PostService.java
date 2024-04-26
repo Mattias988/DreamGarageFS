@@ -18,6 +18,7 @@ public class PostService {
         Posts post = postRepository.findById(postId)
                 .orElseThrow(()-> new EntityNotFoundException("Ten post nie istnieje!"));
         post.setTitle(postDTO.getNewTitle());
+        System.out.println("Yo tu był - benedetto");
         post.setDescription(postDTO.getNewDescription());
         postRepository.save(post);
         return null;
