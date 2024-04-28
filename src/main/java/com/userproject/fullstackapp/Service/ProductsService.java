@@ -26,6 +26,7 @@ public class ProductsService {
 
         return productsRepository.save(existingProducts);
     }
+
     public ResponseEntity<Products> deleteProduct(Long productId){
         Products existingProducts = productsRepository.findById(productId)
                 .orElseThrow(() -> new EntityNotFoundException("Ten użytkownik nie istnieje"));

@@ -20,7 +20,7 @@ public class ProductController {
     private ProductsService productsService;
 
     @GetMapping("/products")
-    public ResponseEntity<List<Products>> findAll() {
+    public ResponseEntity<List<Products>> getAllProducts() {
         List<Products> productsList = productsRepository.findAll();
         return new ResponseEntity<>(productsList, HttpStatus.OK);
     }
