@@ -16,7 +16,7 @@ function Nav() {
                     height={40}
                     className=''
                 />
-                <span className='pl-9 text-white w-[250px]'>
+                <span className='pl-9 text-white w-[250px] self-center'>
                     DREAM GARAGE
                 </span>
             </a>
