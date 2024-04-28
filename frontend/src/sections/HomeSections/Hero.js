@@ -4,8 +4,8 @@ function Hero() {
   return (
     <section 
         id='home'
-        className="w-full flex flex-col h-screen justify-center bg-garage bg-cover">
-            <div className=' w-full h-full backdrop-blur-xs text-white relative justify-center flex flex-col font-primary font-black'>
+        className="w-full flex flex-col h-screen justify-center ">
+            <div className=' w-full h-full backdrop-blur-xs text-white relative justify-center flex flex-col font-primary font-black pb-24'>
                 <h1 className='text-8xl pl-32 font-black '>
                     <span>VISIT OUR</span>
                     <br />
