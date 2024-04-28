@@ -38,9 +38,10 @@ public class UserController {
     public User updateUser(@PathVariable Long userId, @RequestBody UserDTO userDTO) {
         return userService.updateUser(userId, userDTO);
     }
+
     @DeleteMapping("/users/{userId}")
     public ResponseEntity<User> deleteUser(@PathVariable Long userId){
-       return userService.deleteUser(userId);
+        return userService.deleteUser(userId);
     }
 
 }

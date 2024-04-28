@@ -24,11 +24,13 @@ public class UserService {
         existingUser.setEmail(userDTO.getNewEmail());
         return userRepository.save(existingUser);
     }
+
     public ResponseEntity<User> deleteUser(Long userId){
         User existingUser = userRepository.findById(userId)
                 .orElseThrow(() -> new EntityNotFoundException("Ten użytkownik nie istnieje!"));
         userRepository.delete(existingUser);
         return null;
     }
+
 
 }
