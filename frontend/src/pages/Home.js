@@ -1,7 +1,5 @@
 import React from 'react'
-import {Hero} from '../sections/render'
-import GoTo from '../sections/HomeSections/GoTo'
-import Cars from '../sections/HomeSections/Cars'
+import {Hero, GoTo, Cars} from '../sections/render'
 
 function Home() {
   return (

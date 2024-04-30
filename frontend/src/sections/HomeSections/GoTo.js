@@ -13,7 +13,7 @@ function GoTo() {
 
   return (
     <section>
-      <div className='grid'>
+      <div className='grid font-primary'>
          <div className='w-full h-fit-screen text-xs text-white pr-36 pl-36 flex justify-between '>
             <div className='grid self-center opacity-30 hover:opacity-100 w-1/3'
               onMouseEnter={() => setIsHoveredLocation(true)}
@@ -38,7 +38,7 @@ function GoTo() {
                   alt='Arrow'
                   width={28.5}
                   height={0}
-                  className='self-center ml-2 pb-9'
+                  className=' ml-2 pb-9'
                 />
               </a>
               <div className={`w-auto h-0.5 ${isHoveredLocation ? 'bg-orange-400' : 'bg-white'}`}/>
