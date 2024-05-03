@@ -5,9 +5,9 @@ function HeroAbout() {
     <section 
         id='about'
         className="w-full flex flex-col h-screen justify-center ">
-            <div className=' w-full h-full backdrop-blur-xs text-white justify-center flex flex-col font-primary font-black pb-24 '>
-                <div className='grid justify-items-end'>
-                  <h1 className='text-8xl pr-28 font-black  '>
+            <div className=' w-full h-full backdrop-blur-xs backdrop-brightness-50 text-white justify-center flex flex-col font-primary font-black pb-24 '>
+                <div className='grid justify-items-end drop-shadow-lg'>
+                  <h1 className='text-8xl pr-28 font-black'>
                       <span>WHO ARE</span>
                       <br />
                       <span>WE?</span>

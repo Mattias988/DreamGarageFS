@@ -12,7 +12,10 @@ module.exports = {
       },
       backdropBlur:{
         xs: '2px'
-      }
+      },
+      backgroundColor: {
+        primary: '#131313',
+      },
     },
   },
   plugins: [],
