@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import Lambo from '../../assets/lambo.svg'
-import Supra from '../../assets/supraMK4.svg'
-import Audi from '../../assets/audiRS6.svg'
+import Lambo from '../../assets/images/lambo.svg'
+import Supra from '../../assets/images/supraMK4.svg'
+import Audi from '../../assets/images/audiRS6.svg'
 
 function Cars() {
     const [hovered, setHovered] = useState(false);

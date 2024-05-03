@@ -1,7 +1,7 @@
 import React from 'react'
-import Logo from '../assets/logo.svg'
-import User from '../assets/user.svg'
-import Cart from '../assets/cart.svg'
+import Logo from '../assets/icons/logo.svg'
+import User from '../assets/icons/user.svg'
+import Cart from '../assets/icons/cart.svg'
 import { navLinks } from '../constance'
 
 function Nav() {

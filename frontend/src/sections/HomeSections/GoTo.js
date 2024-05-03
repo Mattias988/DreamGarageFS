@@ -1,15 +1,13 @@
 import {React, useState} from 'react'
-import Blog from "../../assets/blog.svg"
-import About from "../../assets/about.svg"
-import Location from "../../assets/location.svg"
-import Arrow_Right from "../../assets/arrow_right.svg"
+import Blog from "../../assets/icons/blog.svg"
+import About from "../../assets/images/about.svg"
+import Location from "../../assets/icons/location.svg"
+import Arrow_Right from "../../assets/icons/arrow_right.svg"
 
 function GoTo() {
   const [isHoveredLocation, setIsHoveredLocation] = useState(false);
   const [isHoveredAbout, setIsHoveredAbout] = useState(false);
   const [isHoveredBlog, setIsHoveredBlog] = useState(false);
-
-
 
   return (
     <section>

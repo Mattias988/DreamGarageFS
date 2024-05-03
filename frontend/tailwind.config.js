@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-      'garage':"url('./assets/bg-garage.jpg')"
+      'garage':"url('./assets/images/bg-garage.jpg')",
+      'mountain': "url('./assets/images/mountain.jpg')"
       },
       fontFamily:{
         primary: ['Montserrat']
