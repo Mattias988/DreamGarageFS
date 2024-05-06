@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../components/Nav';
 import {Hero, GoTo, Cars} from '../sections/render'
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <main className="">
         <section className="">
           <div className='bg-garage bg-cover'>
+            <Nav />
             <Hero/>
             <GoTo />
           </div> 
