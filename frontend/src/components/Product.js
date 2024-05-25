@@ -2,8 +2,14 @@ import React from 'react'
 import EyeCart from "../assets/icons/eye-details.svg"
 import PlusCart from "../assets/icons/plus-cart.svg"
 import { Link } from 'react-router-dom'
+import { CartContext } from './CartContext'
+import { useContext } from 'react'
+import { SidebarContext } from './SidebarContext'
 
 function Product({product}) {
+
+    const {addToCart} = useContext(CartContext)
+    const { isOpen, setIsOpen } = useContext(SidebarContext)
 
 
   return (
@@ -23,7 +29,7 @@ function Product({product}) {
             </div>
             <div className='absolute right-10 top-3 group-hover:right-5 opacity-0 group-hover:opacity-100 transition-all duration-300'>
                 <div className='w-full h-[32px] flex justify-end'>
-                    <button>
+                    <button onClick={() => {addToCart(product, product.productId); setIsOpen(true)}}>
                         <div className='h-[32px] w-[32px] flex justify-center bg-red-400 rounded-lg shadow'>
                             <img src={PlusCart} alt='' className=''/>
                         </div>
