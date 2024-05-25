@@ -1,20 +1,41 @@
-import Nav from './components/Nav';
 import About from './pages/About';
 import Home from './pages/Home';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Shop from './pages/Shop';
 import Sidebar from './components/Sidebar';
+import Login from './pages/Login';
+import Signup from './pages/Sign up';
+import PrivateRoute from './components/PrivateRoute';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AuthService from './Auth/AuthService';
+import React, { useEffect } from 'react';
 
 function App() {
+
+  // useEffect(() => {
+  //   AuthService.logout()
+  // },[])
   return (
     <Router>
       <div className='app-container'>
-        <Nav />
         <div className='content-container'>
           <Routes>
-            <Route exact path='' element={<Home />} />
-            <Route exact path='/about' element={<About />} />
-            <Route exact path='/shop' element={<Shop />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/' element={
+              <PrivateRoute roles={["USER", "ADMIN"]}>
+                <Home />
+              </PrivateRoute>
+            } />
+            <Route path='/about' element={
+              <PrivateRoute>
+                <About />
+              </PrivateRoute>
+            } />
+              <Route exact path='/shop' element={
+                <PrivateRoute>
+                  <Shop />
+                </PrivateRoute>
+              } />
           </Routes>
           <Sidebar />
         </div>
