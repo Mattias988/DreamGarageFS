@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from '../assets/icons/logo.svg'
 import User from '../assets/icons/user.svg'
 import Cart from '../assets/icons/cart.svg'
 import { navLinks } from '../constance'
+import { SidebarContext } from './SidebarContext'
 
 function Nav() {
+    const { isOpen, setIsOpen } = useContext(SidebarContext)
+
   return (
     <header className='py-8 absolute z-10 w-full font-primary font-bold'>
         <nav className='flex justify-center'>
@@ -40,15 +43,16 @@ function Nav() {
                             className=''
                         />
                     </a>
-                    <a href='/' className='self-center pl-6'>
+                    <div className='self-center pl-6'>
                         <img 
                             src={Cart}
                             alt='Cart'
                             width={40}
                             height={40}
-                            className=''
+                            className='cursor-pointer'
+                            onClick={() => setIsOpen(!isOpen)}
                         />
-                    </a>
+                    </div>
                 </div>
             </div>
         </nav>

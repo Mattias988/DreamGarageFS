@@ -1,5 +1,7 @@
 import About from './pages/About';
 import Home from './pages/Home';
+import Shop from './pages/Shop';
+import Sidebar from './components/Sidebar';
 import Login from './pages/Login';
 import Signup from './pages/Sign up';
 import PrivateRoute from './components/PrivateRoute';
@@ -29,8 +31,13 @@ function App() {
                 <About />
               </PrivateRoute>
             } />
-            {/* Dodaj więcej tras tutaj, wszystkie zabezpieczone przez PrivateRoute */}
+              <Route exact path='/shop' element={
+                <PrivateRoute>
+                  <Shop />
+                </PrivateRoute>
+              } />
           </Routes>
+          <Sidebar />
         </div>
       </div>
     </Router>

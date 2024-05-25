@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
       'garage':"url('./assets/images/bg-garage.jpg')",
-      'mountain': "url('./assets/images/mountain.jpg')"
+      'mountain': "url('./assets/images/mountain.jpg')",
+      'japanese': "url('./assets/images/jdmbackground.svg')"
       },
       fontFamily:{
         primary: ['Montserrat']
@@ -15,6 +16,7 @@ module.exports = {
       },
       backgroundColor: {
         primary: '#131313',
+        tertiary: '#2F2F2F',
         secondary: '#353535'
       },
     },

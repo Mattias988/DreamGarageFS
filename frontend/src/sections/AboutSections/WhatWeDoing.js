@@ -31,7 +31,7 @@ function WhatWeDoing() {
                     <p className='text-xs font-light lg:pb-8'>
                         WE ORGANIZE JDM EVENTS WORLDWIDE!
                     </p>
-                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:animate-bounce hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
+                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
                         JDM EVENTS HERE!
                     </button>
                 </div>
@@ -53,7 +53,7 @@ function WhatWeDoing() {
                         <br/> 
                         CARS!
                     </p>
-                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:animate-bounce hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
+                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
                         PARTNERSHIP HERE!
                     </button>
                 </div>
@@ -73,7 +73,7 @@ function WhatWeDoing() {
                     <p className='text-xs font-light lg:pb-8'>
                         WE HAVE OUR OWN MECHANIC!
                     </p>
-                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:animate-bounce hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
+                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
                         MECHANIC HERE!
                     </button>
                 </div>
@@ -93,7 +93,7 @@ function WhatWeDoing() {
                     <p className='text-xs font-light lg:pb-8'>
                         WE ORGANIZE DRIFT EVENTS!
                     </p>
-                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2 hover:animate-bounce hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
+                    <button class="bg-primary sm:scale-50 lg:scale-75 md:scale-75 mt-2  hover:border-white hover:font-semibold text-white font-medium py-2 px-4 rounded-full">
                         DRIFT EVENTS HERE!
                     </button>
                 </div>
