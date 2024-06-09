@@ -5,18 +5,34 @@ function ShopSec() {
 
     const[data, setData] = useState(null);
 
-    useEffect(() => {
-        fetch('http://localhost:8080/products')
-            .then(response => {
-                if(!response.ok) {
-                    throw new Error('Something is not ok... Try again later.')
-                }
-                return response.json()
-            })
-            .then(data => {
-                setData(data)
-            })
-    }, [])
+useEffect(() => {
+    const fetchData = async () => {
+        const tokenData = JSON.parse(localStorage.getItem('user'));
+        if (!tokenData || !tokenData.token) {
+            throw new Error('No token found');
+        }
+
+        const token = tokenData.token;
+        
+        const response = await fetch('http://localhost:8080/products', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Something is not ok... Try again later.');
+        }
+        
+        const data = await response.json();
+        setData(data);
+    };
+
+    fetchData().catch(error => {
+        console.error('Error fetching data:', error);
+    });
+}, []);
+
 
     return ( 
       <section className='bg-stone-800 w-full h-fit'>
