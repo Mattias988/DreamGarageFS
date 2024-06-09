@@ -31,11 +31,11 @@ function App() {
                 <About />
               </PrivateRoute>
             } />
-              <Route exact path='/shop' element={
-                <PrivateRoute>
-                  <Shop />
-                </PrivateRoute>
-              } />
+            <Route exact path='/shop' element={
+              <PrivateRoute roles={["USER", "ADMIN"]}>
+                <Shop />
+              </PrivateRoute>
+            } />
           </Routes>
           <Sidebar />
         </div>
